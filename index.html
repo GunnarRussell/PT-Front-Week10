@@ -1,12 +1,57 @@
+<!-- Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
+
+    A Bootstrap styled table representing your choice of data.
+    A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit. -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <table class="table table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr>
+                <th>1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th>1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th>1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+            </tbody>
+        </table>
+        <form>
+            <b>Input Data:</b>
+            <input type="text" id="input1" class="input-fields" placeholder="First Name">
+            <input type="text" id="input2" class="input-fields" placeholder="Last Name">
+            <input type="text" id="input3" class="input-fields" placeholder="contact@email.com">
+            <button type="button" class="btn btn-outline-dark" id="button">Submit</button>
+        </form>
+    </div>
 
     <script src="index.js"></script>
 </body>
