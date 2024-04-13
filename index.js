@@ -6,6 +6,8 @@ let inputEmail = document.getElementById("input3");
 let button = document.getElementById("button");
 let num = 1;
 
+
+// submit button
 button.addEventListener("click", function()
 {
     //input validation
