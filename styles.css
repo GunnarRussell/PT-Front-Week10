@@ -1,0 +1,22 @@
+body
+{
+    background-color: rgb(188, 224, 251);
+}
+
+.more-padding
+{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.input-fields
+{
+    height: 38px;
+    padding-left: 10px;
+}
+
+.my-text
+{
+    font-size: 20px;
+    padding-right: 10px;
+}

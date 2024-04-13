@@ -8,7 +8,7 @@ let num = 1;
 
 button.addEventListener("click", function()
 {
-    //data validation
+    //input validation
     if(inputFirstName.value == "") //if first name field is empty
     {
         //undo any style changes

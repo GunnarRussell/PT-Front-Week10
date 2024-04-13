@@ -11,35 +11,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Container -->
-    <div class="container-fluid">
+    <div class="container-fluid more-padding">
 
-        <!-- Table -->
-        <table class="table table-striped">
-            <thead class="table-dark">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Email</th>
-              </tr>
-            </thead>
-            <tbody id="myTable">
-              <!-- rows will be added via JS -->
-            </tbody>
-        </table>
-
-        <!-- Input Form -->
-        <form>
-            <b>Input Data:</b>
-            <input type="text" id="input1" class="input-fields" placeholder="First Name">
-            <input type="text" id="input2" class="input-fields" placeholder="Last Name">
-            <input type="text" id="input3" class="input-fields" placeholder="contact@email.com">
-            <button type="button" class="btn btn-outline-dark" id="button">Submit</button>
-        </form>
+        <div class="container-fluid">
+            <!-- Table -->
+            <table class="table table-striped">
+                <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+                </thead>
+                <tbody id="myTable">
+                <!-- rows will be added via JS -->
+                </tbody>
+            </table>
+        </div>
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <!-- Input Form -->
+            <form>
+                <span class="my-text align-middle"><b>New Entry:</b></span>
+                <input type="text" id="input1" class="input-fields align-middle" placeholder="First Name">
+                <input type="text" id="input2" class="input-fields align-middle" placeholder="Last Name">
+                <input type="text" id="input3" class="input-fields align-middle" placeholder="contact@email.com">
+                <button type="button" class="btn btn-outline-dark align-middle" id="button">Submit</button>
+            </form>
+        </div>
     </div>
 
     <script src="index.js"></script>
